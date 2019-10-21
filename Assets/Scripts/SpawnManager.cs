@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] zombiesPrefabs;
+    public GameObject redLight;
 
     private float spawnRangeX = 20.0f;
     private float spawnPosZ = 31.0f;
@@ -32,6 +33,7 @@ public class SpawnManager : MonoBehaviour
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), -12, spawnPosZ);
 
             Instantiate(zombiesPrefabs[animalIndex], spawnPos, zombiesPrefabs[animalIndex].transform.rotation);
+            Instantiate(redLight, spawnPos, zombiesPrefabs[animalIndex].transform.rotation);
         }
     }
 }
