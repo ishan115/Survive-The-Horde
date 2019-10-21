@@ -20,15 +20,15 @@ public class FollowPlayer : MonoBehaviour
     {
         transform.LookAt(Player.transform);
 
-        if (Vector3.Distance(transform.position, Player.transform.position) >= MinDist)
-        {
+        //if (Vector3.Distance(transform.position, Player.transform.position) >= MinDist)
+        //{
             transform.position += transform.forward * MoveSpeed * Time.deltaTime;
 
-            if (Vector3.Distance(transform.position, Player.transform.position) <= MaxDist)
-            {
-                transform.position += transform.forward * 0 * Time.deltaTime;
-            }
+            //if (Vector3.Distance(transform.position, Player.transform.position) <= MaxDist)
+            //{
+            //    transform.position += transform.forward * 0 * Time.deltaTime;
+            //}
 
-        }
+        //}
     }
 }
