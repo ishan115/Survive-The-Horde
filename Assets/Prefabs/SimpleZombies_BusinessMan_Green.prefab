@@ -1190,6 +1190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3993003096523492993}
   - component: {fileID: 3993003096531247403}
+  - component: {fileID: -7548965660784333069}
   m_Layer: 0
   m_Name: SimpleZombies_BusinessMan_Green
   m_TagString: Untagged
@@ -1239,6 +1240,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-7548965660784333069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993003096523854497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7f15b88f8e410489b431605f2a89a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 2786880374696362404, guid: e392bf5d331a463439ca4607f25d7e27, type: 3}
 --- !u!1 &3993003096523854503
 GameObject:
   m_ObjectHideFlags: 0
