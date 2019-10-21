@@ -6,6 +6,7 @@ public class FollowPlayer : MonoBehaviour
 {
     [SerializeField] GameObject Player;
     public Transform Playerpos;
+
     int MoveSpeed = 4;
     int MaxDist = 10;
     int MinDist = 5;
@@ -14,18 +15,21 @@ public class FollowPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //grab player by tag
+        Player = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody>(); 
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(Playerpos);
+        transform.LookAt(Player.transform);
 
         //if (Vector3.Distance(transform.position, Player.transform.position) >= MinDist)
         //{
         //transform.position += transform.forward * MoveSpeed * Time.deltaTime;
-        rb.AddForce(transform.forward * MoveSpeed);
+
+        rb.AddForce(transform.forward * MoveSpeed, ForceMode.Impulse);
 
             //if (Vector3.Distance(transform.position, Player.transform.position) <= MaxDist)
             //{
