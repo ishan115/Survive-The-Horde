@@ -1161,6 +1161,7 @@ GameObject:
   - component: {fileID: -5658919465776164786}
   - component: {fileID: -6493104636873393218}
   - component: {fileID: 7469251151651405001}
+  - component: {fileID: -8668277225033632791}
   m_Layer: 0
   m_Name: SimpleZombies_Sherif_Blue
   m_TagString: Untagged
@@ -1256,6 +1257,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 3.2704816, z: 1}
   m_Center: {x: 0, y: 1.5755752, z: 0}
+--- !u!114 &-8668277225033632791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3606764549086564538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddd0ce6db0b4c541bbbcad32ab9a29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3606764549086564552
 GameObject:
   m_ObjectHideFlags: 0

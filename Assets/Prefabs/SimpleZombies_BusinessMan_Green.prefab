@@ -1284,6 +1284,7 @@ GameObject:
   - component: {fileID: -7548965660784333069}
   - component: {fileID: 8126310120410462386}
   - component: {fileID: -1922723575045456159}
+  - component: {fileID: 2225181772374629019}
   m_Layer: 0
   m_Name: SimpleZombies_BusinessMan_Green
   m_TagString: Untagged
@@ -1379,6 +1380,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 3.1322846, z: 1}
   m_Center: {x: 0, y: 1.4346863, z: 0}
+--- !u!114 &2225181772374629019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3993003096523854497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddd0ce6db0b4c541bbbcad32ab9a29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3993003096523854503
 GameObject:
   m_ObjectHideFlags: 0

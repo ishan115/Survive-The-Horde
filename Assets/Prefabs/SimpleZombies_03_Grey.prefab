@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 1810600114698420586}
   - component: {fileID: 5223755326369318462}
   - component: {fileID: 6649272637501260870}
+  - component: {fileID: 4169172145618363461}
   m_Layer: 0
   m_Name: SimpleZombies_03_Grey
   m_TagString: Untagged
@@ -333,6 +334,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.8427808, z: 1}
   m_Center: {x: 0, y: 1.3890233, z: 0}
+--- !u!114 &4169172145618363461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3639043313194329991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddd0ce6db0b4c541bbbcad32ab9a29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3639043313194329999
 GameObject:
   m_ObjectHideFlags: 0

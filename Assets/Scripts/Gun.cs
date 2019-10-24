@@ -22,6 +22,13 @@ public class Gun : MonoBehaviour
         if (Physics.Raycast(mainCamera.transform.position, mainCamera.transform.forward, out hasHit, range))
         {
             Debug.Log(hasHit.transform.name);
+
+            Target_Damage target = hasHit.transform.GetComponent<Target_Damage>();
+
+            if (target != null)
+            {
+                target.takeDamage(damage);
+            }
         }
     }
 }

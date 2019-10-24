@@ -1170,6 +1170,7 @@ GameObject:
   - component: {fileID: -5057078603420105064}
   - component: {fileID: 8003510170473707200}
   - component: {fileID: 8631464332309681175}
+  - component: {fileID: 8215536661051167311}
   m_Layer: 0
   m_Name: SimpleZombies_Police_Blue
   m_TagString: Untagged
@@ -1265,6 +1266,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 3.2504618, z: 1}
   m_Center: {x: 0, y: 1.5643442, z: 0}
+--- !u!114 &8215536661051167311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052233974977392263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ddd0ce6db0b4c541bbbcad32ab9a29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2052233974977392287
 GameObject:
   m_ObjectHideFlags: 0
