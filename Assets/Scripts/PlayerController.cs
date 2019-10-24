@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     // Start is called before the first frame update
     public float speed = 20.0f;
+    public float bulletSpeed = 40f;
     public float turnSpeed = 200.0f;
     public float horizontalInput;
     public float forwardInput;
@@ -67,9 +68,11 @@ public class PlayerController : MonoBehaviour
         //Reference taken from: https://www.youtube.com/watch?v=DtT8Jnz56DY
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            GameObject instBullet = Instantiate(projectileBullet, transform.position, Quaternion.identity) as GameObject;
+            Vector3 Spawnpos = new Vector3(transform.position.x, -7.5f, transform.position.z);
+
+            GameObject instBullet = Instantiate(projectileBullet, Spawnpos, Quaternion.identity) as GameObject;
             Rigidbody instRigidBullet = instBullet.GetComponent<Rigidbody>();
-            instRigidBullet.AddForce(Vector3.forward * speed);
+            instRigidBullet.AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
         }
     }
 
