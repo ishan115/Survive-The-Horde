@@ -304,7 +304,7 @@ MonoBehaviour:
   Player: {fileID: 2786880374696362404, guid: e392bf5d331a463439ca4607f25d7e27, type: 3}
   Playerpos: {fileID: 2786880374696795524, guid: e392bf5d331a463439ca4607f25d7e27,
     type: 3}
-  rb: {fileID: 0}
+  rb: {fileID: 8126310120410462386, guid: 808d87748aca2054bb6855b9a9cc48e5, type: 3}
 --- !u!54 &5223755326369318462
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -346,6 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ddd0ce6db0b4c541bbbcad32ab9a29f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 50
 --- !u!1 &3639043313194329999
 GameObject:
   m_ObjectHideFlags: 0

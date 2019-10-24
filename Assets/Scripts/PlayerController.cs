@@ -16,7 +16,9 @@ public class PlayerController : MonoBehaviour
 
     public GameObject projectileBullet;
 
+    Vector3 movement;
 
+    public Animator animator;
 
     float score = 0f;
     public bool isOnGround = true;
@@ -31,6 +33,9 @@ public class PlayerController : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.z);
 
         //Keeping the player in bound along the x axis
         if (transform.position.x < -23)
@@ -59,9 +64,12 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(transform.up * turnSpeed * horizontalInput * Time.deltaTime);
         //rotates the player based on horizontal input
 
+        //Reference taken from: https://www.youtube.com/watch?v=DtT8Jnz56DY
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(projectileBullet, transform.position, transform.rotation);
+            GameObject instBullet = Instantiate(projectileBullet, transform.position, Quaternion.identity) as GameObject;
+            Rigidbody instRigidBullet = instBullet.GetComponent<Rigidbody>();
+            instRigidBullet.AddForce(Vector3.forward * speed);
         }
     }
 
