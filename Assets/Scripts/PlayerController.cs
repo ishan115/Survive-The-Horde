@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     GameObject player;
+    
 
     // Start is called before the first frame update
     public float speed = 20.0f;
@@ -57,6 +58,11 @@ public class PlayerController : MonoBehaviour
 
         transform.Rotate(transform.up * turnSpeed * horizontalInput * Time.deltaTime);
         //rotates the player based on horizontal input
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectileBullet, transform.position, projectileBullet.transform.rotation);
+        }
     }
 
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.003069275, g: 0.0000890262, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.003069281, g: 0.00008902635, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -256,6 +256,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 40824805}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &62000833
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 995755012}
+    m_Modifications:
+    - target: {fileID: 1486317983279863495, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.287
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.166
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.33546
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.33546
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.33546
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c253cd486a74faf4392370ef31864f62, type: 3}
 --- !u!1 &79077568
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,7 +482,7 @@ GameObject:
   - component: {fileID: 89480000}
   - component: {fileID: 89480001}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: BlueLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,7 +500,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 995755012}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &89480001
 Light:

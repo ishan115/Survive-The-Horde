@@ -14,7 +14,7 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnRandomAnimals", startDelay, spawnInterval);
+        InvokeRepeating("SpawnRandomZombies", startDelay, spawnInterval);
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class SpawnManager : MonoBehaviour
 
     }
 
-    public void SpawnRandomAnimals()
+    public void SpawnRandomZombies()
     {
         if (gameObject != null)
         {
