@@ -7,7 +7,7 @@ public class FollowPlayer : MonoBehaviour
     [SerializeField] GameObject Player;
     public Transform Playerpos;
 
-    int MoveSpeed = 4;
+    public int MoveSpeed = 15;
     int MaxDist = 10;
     int MinDist = 5;
 
