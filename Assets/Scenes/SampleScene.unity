@@ -727,6 +727,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 449233282}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &487854477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2786880374696362404, guid: e392bf5d331a463439ca4607f25d7e27,
+    type: 3}
+  m_PrefabInstance: {fileID: 884082800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &487854481
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487854477}
+  serializedVersion: 2
+  m_Mass: 20
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!65 &487854482
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487854477}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.8709173, z: 1}
+  m_Center: {x: -0, y: 1.4409517, z: 0}
 --- !u!1001 &594435833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -915,7 +950,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8784314, g: 0.64705884, b: 0.15294118, a: 1}
   m_Intensity: 7.63
   m_Range: 26.96
   m_SpotAngle: 30
@@ -1086,12 +1121,12 @@ PrefabInstance:
     - target: {fileID: 2786880374696795524, guid: e392bf5d331a463439ca4607f25d7e27,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.91
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 2786880374696795524, guid: e392bf5d331a463439ca4607f25d7e27,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.75
+      value: -12.14
       objectReference: {fileID: 0}
     - target: {fileID: 2786880374696795524, guid: e392bf5d331a463439ca4607f25d7e27,
         type: 3}
@@ -1137,6 +1172,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786880374105684526, guid: e392bf5d331a463439ca4607f25d7e27,
+        type: 3}
+      propertyPath: turnSpeed
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e392bf5d331a463439ca4607f25d7e27, type: 3}
@@ -1609,8 +1649,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 57.368504, y: 1.9848003, z: 58.231873}
-  m_Center: {x: -18.859339, y: -4.734521, z: 5.748459}
+  m_Size: {x: 57.368504, y: 1.7152462, z: 58.231873}
+  m_Center: {x: -18.859339, y: -4.869298, z: 5.748459}
 --- !u!4 &1195853456
 Transform:
   m_ObjectHideFlags: 0
@@ -1668,7 +1708,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8784314, g: 0.64705884, b: 0.15294118, a: 1}
   m_Intensity: 7.63
   m_Range: 26.96
   m_SpotAngle: 30
@@ -1792,7 +1832,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8784314, g: 0.64705884, b: 0.15294118, a: 1}
   m_Intensity: 7.63
   m_Range: 26.96
   m_SpotAngle: 30
@@ -2007,7 +2047,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8784314, g: 0.64705884, b: 0.15294118, a: 1}
   m_Intensity: 7.63
   m_Range: 26.96
   m_SpotAngle: 30
@@ -2452,7 +2492,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8773585, g: 0.64524597, b: 0.15312389, a: 1}
   m_Intensity: 7.63
   m_Range: 26.96
   m_SpotAngle: 30
