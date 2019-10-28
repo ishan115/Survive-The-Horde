@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
         //Reference taken from: https://www.youtube.com/watch?v=DtT8Jnz56DY
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Vector3 Spawnpos = new Vector3(transform.position.x, -7.5f, transform.position.z);
+            Vector3 Spawnpos = new Vector3(transform.position.x, -8.5f, transform.position.z);
 
             GameObject instBullet = Instantiate(projectileBullet, Spawnpos, Quaternion.identity) as GameObject;
             Rigidbody instRigidBullet = instBullet.GetComponent<Rigidbody>();

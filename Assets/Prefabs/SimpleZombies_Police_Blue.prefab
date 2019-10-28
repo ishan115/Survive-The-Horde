@@ -1173,7 +1173,7 @@ GameObject:
   - component: {fileID: 8215536661051167311}
   m_Layer: 0
   m_Name: SimpleZombies_Police_Blue
-  m_TagString: Untagged
+  m_TagString: Zombies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

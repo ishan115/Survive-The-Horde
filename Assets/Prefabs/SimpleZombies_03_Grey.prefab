@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 4169172145618363461}
   m_Layer: 0
   m_Name: SimpleZombies_03_Grey
-  m_TagString: Untagged
+  m_TagString: Zombies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
