@@ -27,10 +27,10 @@ public class SpawnManager : MonoBehaviour
     {
         if (gameObject != null)
         {
-            int animalIndex = Random.Range(0, zombiesPrefabs.Length);
+            int zombieIndex = Random.Range(0, zombiesPrefabs.Length);
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), -10, spawnPosZ);
 
-            Instantiate(zombiesPrefabs[animalIndex], spawnPos, zombiesPrefabs[animalIndex].transform.rotation);
+            Instantiate(zombiesPrefabs[zombieIndex], spawnPos, zombiesPrefabs[zombieIndex].transform.rotation);
         }
     }
 }

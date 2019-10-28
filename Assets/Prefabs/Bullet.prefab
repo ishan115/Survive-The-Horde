@@ -137,8 +137,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be52bfd952055c44c84d82d9d624afeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombiePrefabs: {fileID: 7282785671348811647, guid: f8a64de483398244983dcc447187a527,
-    type: 3}
+  zombiePrefabs:
+  - {fileID: 7282785671348811647, guid: f8a64de483398244983dcc447187a527, type: 3}
+  - {fileID: 3639043313194329991, guid: 4aacfdb4b50ae644a8a5a5304de3a1e8, type: 3}
+  - {fileID: 3993003096523854497, guid: 808d87748aca2054bb6855b9a9cc48e5, type: 3}
+  - {fileID: 2670321884279336965, guid: 03269ce974e6be742890fd26df3b7be1, type: 3}
+  - {fileID: 2052233974977392263, guid: 03f1aa9bf57666e46b5a8b82740d3afd, type: 3}
+  - {fileID: 3658714004936164809, guid: 7682f818fa5f6ce46ac89d8ef22d5bbd, type: 3}
+  - {fileID: 3606764549086564538, guid: 5d1b446b34e92b243a550883c660cb3a, type: 3}
 --- !u!1 &7825362539228196681
 GameObject:
   m_ObjectHideFlags: 0
