@@ -1,0 +1,66 @@
+Game Design Document
+
+Tagline
+------------------------------
+A casual third-person endless zombie survival game
+
+Design Pillars
+------------------------------
+- Fast
+- Simple
+- Intense
+
+Story/Gameplay Summary
+------------------------------
+The game is about a player whose in an endless wave of incoming zombies which gets
+progressively harder as the player moves up the waves.
+
+Feature List - Original
+------------------------------
+● Player respawn system
+● Pause function
+● Reset game
+● Screenshake when hit
+● Zombie makes sound
+● Round timer music
+● Brief time b/w rounds system
+● Powerups like speed and shield
+
+Updated Features List (order of importance)
+------------------------------
+● *Zombies following players (1 day) - Done
+● *Bullet shooting (½ day) - Done
+● *Score Counter (½ day)
+● *Health/Damage system (1 day)
+● *Player respawn system (1 day)
+● *Brief time b/w rounds system (1 day)
+● Reset game (½ day)
+● Pause function (½ day)
+● Zombie makes sound (½ day)
+● Round timer music (½ day)
+● Screenshake when hit (½ day)
+● Powerups like speed and shield (2-3 days)
+
+Additional Features
+------------------------------
+● Added bullet crosshair
+● Added blue light for player and red light for enemy
+● Froze X and Z rotational direction for player and enemy to prevent un-necessary clipping
+● Re-adjusted colliders to better suit the enviornment
+● Changed streetlight colors to yellow for more natural lighting enviornment
+
+References
+------------------------------
+● Age of Zombies - Halfbrick Studios
+● Minigore - Mountain Sheep
+● Dead Ops Arcade: Call of Duty Black Ops - Treyarch Studios
+
+Target Audience & Platform
+------------------------------
+This is targeted more for people who aren’t really looking for something deep or having
+an intense storyline sort of game, but some laid back casual arcade-styled game.
+Preferably for people who are commuting by train or bus.
+
+Asset Research
+------------------------------
+Game Art Assets --> https://assetstore.unity.com/?q=simple%20cartoon&orderBy=0 (Any of the Synty Studio assets essentially)
