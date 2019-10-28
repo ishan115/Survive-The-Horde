@@ -45,9 +45,9 @@ Additional Features
 ------------------------------
 ● Added bullet crosshair
 ● Added blue light for player and red light for enemy
-● Froze X and Z rotational direction for player and enemy to prevent un-necessary clipping
-● Re-adjusted colliders to better suit the enviornment
-● Changed streetlight colors to yellow for more natural lighting enviornment
+● Froze X and Z rotational direction for player and enemy to prevent unnecessary clipping
+● Re-adjusted colliders to better suit the environment
+● Changed streetlight colors to yellow for more natural lighting environment
 
 References
 ------------------------------
