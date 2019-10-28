@@ -3,16 +3,24 @@ using UnityEngine.UI;
 
 public class ScoreUI : MonoBehaviour
 {
-    [SerializeField] GameObject bullet;
     [SerializeField] Text gameoverText;
-    int score = 0;
 
-    private void OnCollisionEnter(Collision other)
+    public int score = 0;
+    //private void OnCollisionEnter(Collision other)
+    //{
+    //    if (other.gameObject.CompareTag("Zombies"))
+    //    {
+    //        GameObject bullet = GameObject.FindGameObjectWithTag("Bullet");
+    //        Collision_Detection cd = bullet.GetComponent<Collision_Detection>();
+
+    //        score = cd.scoreNumberUI;
+    //        gameoverText.text = "" + score;
+    //    }
+    //}
+
+    public void increaseScore()
     {
-        if (other.gameObject.CompareTag("Zombies"))
-        {
-            Debug.Log("reaching");
-            gameoverText.text = "" + score;
-        }
+        score++;
+        gameoverText.text = "" + score;
     }
 }
