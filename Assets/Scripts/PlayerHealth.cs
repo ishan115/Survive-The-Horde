@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -33,6 +34,9 @@ public class PlayerHealth : MonoBehaviour
             if (health == 0)
             {
                 Destroy(gameObject);
+
+                Time.timeScale = 0f;
+                SceneManager.LoadScene("GameOver");
             }
         }
 
