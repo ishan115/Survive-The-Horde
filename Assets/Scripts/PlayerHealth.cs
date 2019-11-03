@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        healthSystem();
+       
     }
 
     public void OnCollisionEnter(Collision other)
@@ -26,7 +26,8 @@ public class PlayerHealth : MonoBehaviour
 
         if (other.gameObject.CompareTag("Zombies"))
         {
-            health = -1;
+            health = health -1;
+            healthSystem();
             Destroy(other.gameObject);
 
             if (health == 0)
