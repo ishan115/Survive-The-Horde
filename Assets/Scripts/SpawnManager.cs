@@ -9,39 +9,13 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeX = 20.0f;
     private float spawnPosZ = 31.0f;
     [SerializeField] private float startDelay = 5.0f;
-    [SerializeField] private float spawnInterval = 10.0f;
+    [SerializeField] private float spawnInterval = 7.0f;
 
-    private float timer = 0f;
-
-    private float waitTime1 = 15f;
-
-    private float waitTime2 = 30f;
-
-    private float waitTime3 = 60f;
 
     // Start is called before the first frame update
     void Start()
     {
-        timer += Time.deltaTime;
-
-        if (timer < waitTime1)
-        {
-            InvokeRepeating("SpawnRandomZombies", startDelay, spawnInterval);
-        }
-        else if (timer > waitTime1 && timer < waitTime2)
-        {
-            InvokeRepeating("SpawnRandomZombies", startDelay - 2f, spawnInterval - 2f);
-        }
-        else if (timer > waitTime2 && timer < waitTime3)
-        {
-            InvokeRepeating("SpawnRandomZombies", startDelay - 2f, spawnInterval - 2f);
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        InvokeRepeating("SpawnRandomZombies", startDelay, spawnInterval);
     }
 
     public void SpawnRandomZombies()
