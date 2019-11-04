@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeX = 20.0f;
     private float spawnPosZ = 31.0f;
     [SerializeField] private float startDelay = 5.0f;
-    [SerializeField] private float spawnInterval = 7.0f;
+    [SerializeField] private float spawnInterval = 4.0f;
 
 
     // Start is called before the first frame update
