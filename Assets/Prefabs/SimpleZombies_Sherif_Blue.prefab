@@ -1227,7 +1227,7 @@ MonoBehaviour:
   Player: {fileID: 2786880374696362404, guid: e392bf5d331a463439ca4607f25d7e27, type: 3}
   Playerpos: {fileID: 2786880374696795524, guid: e392bf5d331a463439ca4607f25d7e27,
     type: 3}
-  MoveSpeed: 75
+  MoveSpeed: 225
   rb: {fileID: 8126310120410462386, guid: 808d87748aca2054bb6855b9a9cc48e5, type: 3}
 --- !u!54 &-6493104636873393218
 Rigidbody:
