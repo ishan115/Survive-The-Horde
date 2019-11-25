@@ -303,6 +303,7 @@ Transform:
   - {fileID: 2786880374696709102}
   - {fileID: 2786880374696795552}
   - {fileID: 7297251007436205572}
+  - {fileID: 4559469617963795893}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -2289,6 +2290,81 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &3163228026352127826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2786880374696795524}
+    m_Modifications:
+    - target: {fileID: 1486317983279863495, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_Name
+      value: Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c253cd486a74faf4392370ef31864f62, type: 3}
+--- !u!4 &4559469617963795893 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
+    type: 3}
+  m_PrefabInstance: {fileID: 3163228026352127826}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5230654315312472279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2296,6 +2372,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2786880374696795548}
     m_Modifications:
+    - target: {fileID: 100000, guid: fff3c81b3f69f5347abc1911d31e94e8, type: 3}
+      propertyPath: m_Name
+      value: Gun
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fff3c81b3f69f5347abc1911d31e94e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.321
@@ -2351,10 +2431,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: fff3c81b3f69f5347abc1911d31e94e8, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: fff3c81b3f69f5347abc1911d31e94e8, type: 3}
-      propertyPath: m_Name
-      value: Gun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff3c81b3f69f5347abc1911d31e94e8, type: 3}
