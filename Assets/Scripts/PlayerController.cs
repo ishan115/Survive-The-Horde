@@ -6,7 +6,11 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     GameObject player;
-    
+    public Rigidbody rb;
+    public Camera cam;
+
+    Vector3 movement;
+    Vector3 mousePos;
 
     // Start is called before the first frame update
     public float speed = 20.0f;
@@ -16,8 +20,6 @@ public class PlayerController : MonoBehaviour
     public float forwardInput;
 
     public GameObject projectileBullet;
-
-    Vector3 movement;
 
     public Animator animator;
 
@@ -74,6 +76,17 @@ public class PlayerController : MonoBehaviour
             Rigidbody instRigidBullet = instBullet.GetComponent<Rigidbody>();
             instRigidBullet.AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
         }
+
+        //mouse aiming
+        //mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
     }
+
+    //public void FixedUpdate()
+    //{
+    //    Vector3 lookDir = mousePos - rb.position;
+    //    float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+    //    rb.rotation = angle;
+    //}
 
 }
