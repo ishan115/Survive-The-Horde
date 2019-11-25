@@ -64,15 +64,15 @@ public class PlayerController : MonoBehaviour
         //moves the player forward basaed on vertical input
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
 
-
+        transform.Rotate(Vector3.up * speed * Time.deltaTime * horizontalInput);
 
     }
 
-    private void FixedUpdate()
-    {
-        rotationSpeed = rb.velocity.magnitude;
-        angularSpeed = rb.angularVelocity.magnitude / (Mathf.PI * 2);
+    //private void FixedUpdate()
+    //{
+    //    rotationSpeed = rb.velocity.magnitude;
+    //    angularSpeed = rb.angularVelocity.magnitude / (Mathf.PI * 2);
 
-        rb.angularVelocity = new Vector3(0, Mathf.PI * 2, 0);
-    }
+    //    rb.angularVelocity = new Vector3(0, Mathf.PI * 2, 0);
+    //}
 }
