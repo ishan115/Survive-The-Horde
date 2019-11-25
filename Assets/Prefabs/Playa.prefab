@@ -338,13 +338,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5da3ad3e80a269489ff3909d76c6cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  cam: {fileID: 0}
   speed: 20
-  bulletSpeed: 40
   turnSpeed: 200
   horizontalInput: 0
   forwardInput: 0
-  projectileBullet: {fileID: 1486317983279863495, guid: c253cd486a74faf4392370ef31864f62,
-    type: 3}
+  rotationSpeed: 0
+  angularSpeed: 0
   animator: {fileID: 2786880374705861220}
   isOnGround: 1
 --- !u!1 &2786880374696362412
@@ -2305,7 +2306,7 @@ PrefabInstance:
     - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.18
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
         type: 3}
@@ -2315,7 +2316,7 @@ PrefabInstance:
     - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.77
       objectReference: {fileID: 0}
     - target: {fileID: 1486317983279893223, guid: c253cd486a74faf4392370ef31864f62,
         type: 3}
