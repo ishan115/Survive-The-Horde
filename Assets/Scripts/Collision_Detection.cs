@@ -27,9 +27,5 @@ public class Collision_Detection : MonoBehaviour
             Destroy(other.gameObject);
             sc.increaseScore();
         }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
 }

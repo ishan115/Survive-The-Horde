@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     GameObject player;
-    public Rigidbody rb;
-    public Camera cam;
+
+    public GameObject emptyPlayer;
 
     Vector3 movement;
     Vector3 mousePos;
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
@@ -64,15 +64,10 @@ public class PlayerController : MonoBehaviour
         //moves the player forward basaed on vertical input
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
 
-        transform.Rotate(Vector3.up * speed * Time.deltaTime * horizontalInput);
+        transform.Rotate(Vector3.up * speed * Time.deltaTime * horizontalInput, Space.World);
 
+        float midPoint = (transform.position - emptyPlayer.transform.position).magnitude;
+
+        transform.LookAt(transform.position * midPoint);
     }
-
-    //private void FixedUpdate()
-    //{
-    //    rotationSpeed = rb.velocity.magnitude;
-    //    angularSpeed = rb.angularVelocity.magnitude / (Mathf.PI * 2);
-
-    //    rb.angularVelocity = new Vector3(0, Mathf.PI * 2, 0);
-    //}
 }

@@ -25,17 +25,6 @@ public class FollowPlayer : MonoBehaviour
     {
         transform.LookAt(Player.transform);
 
-        //if (Vector3.Distance(transform.position, Player.transform.position) >= MinDist)
-        //{
-        //transform.position += transform.forward * MoveSpeed * Time.deltaTime;
-
         rb.AddForce(transform.forward * MoveSpeed, ForceMode.Impulse);
-
-            //if (Vector3.Distance(transform.position, Player.transform.position) <= MaxDist)
-            //{
-            //    transform.position += transform.forward * 0 * Time.deltaTime;
-            //}
-
-        //}
     }
 }
