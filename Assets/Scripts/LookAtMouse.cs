@@ -5,10 +5,11 @@ using UnityEngine.AI;
 
 public class LookAtMouse : MonoBehaviour
 {
+    public Camera EmptyPlayerCamera;
     // Start is called before the first frame update
     void Start()
     {
- 
+        EmptyPlayerCamera = gameObject.GetComponent<Camera>();
     }
 
     // Update is called once per frame
