@@ -19,6 +19,7 @@ public class Collision_Detection : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
+            Destroy(gameObject, 1);
             return;
         }
         else if (other.gameObject.CompareTag("Zombies"))
@@ -26,6 +27,9 @@ public class Collision_Detection : MonoBehaviour
             Destroy(gameObject);
             Destroy(other.gameObject);
             sc.increaseScore();
+        } else
+        {
+            Destroy(gameObject, 3);
         }
     }
 }

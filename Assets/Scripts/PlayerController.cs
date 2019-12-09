@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     // Start is called before the first frame update
     public float speed = 20.0f;
-    public float turnSpeed = 10.0f;
+    public float turnSpeed = 200.0f;
     public float horizontalInput;
     public float forwardInput;
 
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
         //moves the player forward basaed on vertical input
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
 
-        transform.Rotate(Vector3.up * speed * Time.deltaTime * turnSpeed, Space.World);
+        transform.Rotate(transform.up * turnSpeed * horizontalInput * Time.deltaTime);
 
         float midPoint = (transform.position - emptyPlayer.transform.position).magnitude;
 

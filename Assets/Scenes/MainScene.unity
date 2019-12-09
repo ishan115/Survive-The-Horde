@@ -1084,7 +1084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileBullet: {fileID: 1305302557}
-  bulletSpeed: 40
+  bulletSpeed: 75
 --- !u!54 &487854481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1483,10 +1483,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1547743708774912554, guid: e392bf5d331a463439ca4607f25d7e27,
+        type: 3}
+      propertyPath: bulletSpeed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2786880374105684526, guid: e392bf5d331a463439ca4607f25d7e27,
         type: 3}
       propertyPath: turnSpeed
-      value: 250
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2786880374105684526, guid: e392bf5d331a463439ca4607f25d7e27,
         type: 3}
