@@ -5,7 +5,6 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour
 {
     [SerializeField] GameObject Player;
-    public Transform Playerpos;
 
     public int MoveSpeed = 15;
     int MaxDist = 10;
@@ -25,6 +24,6 @@ public class FollowPlayer : MonoBehaviour
     {
         transform.LookAt(Player.transform);
 
-        rb.AddForce(transform.forward * MoveSpeed, ForceMode.Impulse);
+        transform.Translate(Vector3.forward * MoveSpeed * Time.deltaTime);
     }
 }

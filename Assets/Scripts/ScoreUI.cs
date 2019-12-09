@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreUI : MonoBehaviour
 {
@@ -11,5 +12,10 @@ public class ScoreUI : MonoBehaviour
     {
         score++;
         gameoverText.text = "" + score;
+
+        if (score == 5)
+        {
+            SceneManager.LoadScene("Scene_2");
+        }
     }
 }
