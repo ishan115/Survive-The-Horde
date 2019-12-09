@@ -636,6 +636,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileBullet: {fileID: 1305302557}
   bulletSpeed: 75
+--- !u!114 &487854480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487854477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e914b2a2ea7a24db7894bc71051e49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptyPlayer: {fileID: 0}
+  speed: 20
+  turnSpeed: 200
+  horizontalInput: 0
+  forwardInput: 0
+  rotationSpeed: 0
+  angularSpeed: 0
+  animator: {fileID: 9500000, guid: d55a3dafe23105e409ee70d6605cbd49, type: 3}
+  isOnGround: 1
 --- !u!54 &487854481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -786,9 +807,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.7071826
       objectReference: {fileID: 0}
+    - target: {fileID: 8031350487501781812, guid: e392bf5d331a463439ca4607f25d7e27,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031350487501781812, guid: e392bf5d331a463439ca4607f25d7e27,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 9500000, guid: d55a3dafe23105e409ee70d6605cbd49, type: 3}
     m_RemovedComponents:
     - {fileID: 1209123358194609686, guid: e392bf5d331a463439ca4607f25d7e27, type: 3}
     - {fileID: 2787091914311572451, guid: e392bf5d331a463439ca4607f25d7e27, type: 3}
+    - {fileID: 2786880374105684526, guid: e392bf5d331a463439ca4607f25d7e27, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e392bf5d331a463439ca4607f25d7e27, type: 3}
 --- !u!1 &899912762
 GameObject:
