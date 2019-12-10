@@ -53,9 +53,13 @@ Change log for Build2.0
 ------------------------------
 ● Didn't add powerups yet, still plan to add it
 ● Fixed perspective to top down for easier control
-● Added 2 new levels
+● Added 2 new levels (Level 1 is now tutorial)
 ● Relocated score counter to be under hearts
 ● Reduced blue light of player in level 2 to accompany for light level of level 2
+● Mouse1 to shoot rather than spacebar
+● Added snow to level 1 and 2
+● Added music for each level
+● Cleaned code and removed unnecessary files from the project
 
 References
 ------------------------------
