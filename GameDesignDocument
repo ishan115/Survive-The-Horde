@@ -49,6 +49,14 @@ Additional Features
 ● Re-adjusted colliders to better suit the environment
 ● Changed streetlight colors to yellow for more natural lighting environment
 
+Change log for Build2.0
+------------------------------
+● Didn't add powerups yet, still plan to add it
+● Fixed perspective to top down for easier control
+● Added 2 new levels
+● Relocated score counter to be under hearts
+● Reduced blue light of player in level 2 to accompany for light level of level 2
+
 References
 ------------------------------
 ● Age of Zombies - Halfbrick Studios
